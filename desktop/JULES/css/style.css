@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+body {
+    font-family: "Britannic Bold", serif;
+    font-size: 13px;
+    line-height: 1.5em;
+    color: #fff;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#container {
+    width: 330px;
+    min-height: 150px;
+    opacity: 0.8;
+    background: #333;
+    overflow: auto;
+    margin: 60px auto;
+    border: #666 solid 2px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#audio-img {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.cover {
+    width: 100%;
+    z-index: 1;
+}
+
+#audio-info {
+    text-align: center;
+}
+#audio-info .artist{
+    font-weight: bold;
+}
+
+input#volume{
+    width: 86%;
+    -webkit-appearance: none !important;
+    background: #ccc;
+    height: 1px;
+    margin-bottom: 20px;
+}
+
+
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 16px;
+    width: 15px;
+    background: url(../img/soundThumb.png) no-repeat;
+}
+
+#audio-buttons{
+    width: 90%;
+    display: block;
+    margin: 15px auto;
+    margin-left: 23px;
+    overflow: auto;
+}
+button#muter{
+    width: 25px;
+    height: 25px;
+    background: url(../img/muter.png) no-repeat;
+    position: absolute;
+    margin-left: -165px;
+}
+button#player{
+    width: 25px;
+    height: 25px;
+    background: url(../img/player.png) no-repeat;
+    position: absolute;
+    margin-left: 140px;
+}
+button#play{
+    width: 70px;
+    height: 70px;
+    background: url(../img/playCreme.png) no-repeat;
+}
+button#play:active {
+    background: url(../img/playOrange.png) no-repeat;
+}
+button#pause{
+    width: 70px;
+    height: 70px;
+    background: url(../img/pauseCreme.png) no-repeat;
+}
+button#pause:active {
+    background: url(../img/pauseOrange.png) no-repeat;
+}
+button#stop{
+    width: 70px;
+    height: 70px;
+    background: url(../img/stop.png) no-repeat;
+}
+button#prev{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -75px;
+    background: url(../img/previousCreme.png) no-repeat;
+}
+button#prev:active{
+    background: url(../img/prevOrange.png) no-repeat;
+}
+button#next{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: url(../img/nextCreme.png) no-repeat;
+}
+button#next:active{
+    background: url(../img/nextOrange.png) no-repeat
+}
+
+#playlist{
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    color: #EDD8C7;
+}
+#playlist li:hover{
+    cursor: pointer;
+    color: orangered;
+    font-size: 13.5px;
+}
+#playlist li.active {
+    font-weight: bold;
+    color: #666;
+}
+
+#progressbar {
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 29px;
+    height: 10px;
+    background: url(../img/progressbarCremeVide.png) no-repeat;
+    float: center;
+}
+#progress{
+    background: url(../img/progressbarOrangePleine.png) no-repeat;
+    height: 10px;
+    display: block;
+    position: absolute;
+    
+}
+#duration{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin-top: -40px;
+    margin-right: 137px;
+    padding: 4px 8px;
+    background: darkslategray;
+    opacity: 0.8;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#tracker{
+    position: relative;
+    width: 100%;
+}

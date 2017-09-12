@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://github.com/Koppy7/Julien.git"></script>
+        <link rel="stylesheet" href="animate.css">    
+        <link rel="stylesheet" type="text/css" href="css/style.css">      
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">        
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> 
+        <script src="jquery.bxslider/jquery.bxslider.min.js"></script>   
+        <link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />   
+        <script src="WOW-master/dist/wow.min.js"></script>      
+        <script type="text/javascript">
+            new WOW().init();
+    
+        </script>
+        
+            
+                
+    </head>
+
+    <body>
+            <div id="BigVid">
+                    <video autoplay loop poster="JULES.webp" id="bigvid">
+                        <source src="video/BGVideo.webm" type="video/webm">
+                        <source src="video/BGVideo.mp4" type="video/mp4">
+                    </video>
+            </div>
+            <nav>
+                    <img src="images/noeud-papMenu.png" id="NoeudPapMenu"/>
+                    <p class="WPYP">We Play, You Party</p>                    
+                    <ul>
+                        <li><a id="HOME" class="Menued">Home</a></li>
+                        <li><a id="MUSIC" class="Menued">Music</a></li>
+                        <li><a id="CONCEPT" class="Menued">Concept</a></li>
+                        <li><a id="CONTACT" class="Menued">Contact</a></li>
+                    </ul>
+                </nav>
+        <center>
+        <div id="Home">
+            <img src="images/Home_Logo.png" />
+        </div>
+        <div id="container">
+                <div id="audio-image">
+                    <img class="cover" />
+                </div>
+                <div id="audio-player">
+                    <div id="audio-info">
+                        <span class="artist"></span><span class="title"></span>
+                        <button id="muter"></button>
+                        <button id="player"></button>
+                    </div>
+                    <input id="volume" type="range" min="0" max="80" value="40" />
+                    <br>
+                    <div id="audio-buttons">
+                        <center>
+                        <button id="prev"></button>
+                        <button id="play"></button>
+                        <button id="pause"></button>
+                        <button id="stop"></button>                    
+                        <button id="next"></button>   
+                        </center>                 
+                    </div>
+                    <div class="clearfix"></div>
+                    <div id="tracker">
+                        <div id="progressbar">
+                            <span id="progress"></span>
+                        </div>
+                        <span id="duration"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <ul id="playlist">
+                        <li song="ArtistA - MusicA.mp3" ></li>
+                    </ul>
+            </div>
+        </div>
+        
+        <div id="CadreHomeVideo">
+                <div id="Music"></div>
+                
+            <span id="homeVidName"><iframe width="680" height="315" src="https://www.youtube.com/embed/ymE9pNKLcJk" frameborder="0" allowfullscreen id="aha"></iframe><span id="homeVideoName"><section class="wow pulse animated infinite">Monsieur Jules</section></span></span>
+            <span id="decoRight"></span>
+            <span id="decoLeft"></span>
+            
+        </div>
+
+        <div id="CadreVid1">
+            <span class="case1"><iframe width="220" height="130" id="Vid1" src="https://www.youtube.com/embed/ymE9pNKLcJk" frameborder="0" allowfullscreen></iframe><span class="nameCase"><section class="wow flipInX">Monsieur Jules</section></span></span>
+            <span class="case2"><iframe width="220" height="130" id="Vid2" src="https://www.youtube.com/embed/frIY0IQ8dHE" frameborder="0" allowfullscreen></iframe><span class="nameCase"><section class="wow flipInX">Tango y Vino Tinto</section></span></span>
+            <span class="case3"><iframe width="220" height="130" id="Vid3" src="https://www.youtube.com/embed/5BLZMeMRTP0" frameborder="0" allowfullscreen></iframe><span class="nameCase"><section class="wow flipInX">West to East Coast</section></span></span>
+            <span class="case4"><iframe width="220" height="130" id="Vid4" src="https://www.youtube.com/embed/miiWwFQ_LDI" frameborder="0" allowfullscreen></iframe><span class="nameCase"><section class="wow flipInX">Tudo bem [Mix do Brazil]</section></span></span>
+            <span class="case5"><iframe width="220" height="130" id="Vid5" src="https://www.youtube.com/embed/5wrc0gbqn_0" frameborder="0" allowfullscreen></iframe><span class="nameCase"><section class="wow flipInX">Chillax [Mellow - Relaxation]</section></span></span>
+            <span class="case6"><iframe width="220" height="130" id="Vid6" src="https://www.youtube.com/embed/jyWpedRqrlU" frameborder="0" allowfullscreen></iframe><span class="nameCaseDuo"><section class="wow flipInX">French Connection<br>[Mix Chansons Française]</section></span></span>
+            <span class="case7"><iframe width="220" height="130" id="Vid7" src="https://www.youtube.com/embed/_YB4-5INm44" frameborder="0" allowfullscreen></iframe><span class="nameCaseDuo"><section class="wow flipInX">Oysters  &amp; Champagne<br>[Cocktail Wedding Mix]</section></span></span>
+            <span class="case8"><iframe width="220" height="130" id="Vid8" src="https://www.youtube.com/embed/wIDdLYuijL0" frameborder="0" allowfullscreen></iframe><span class="nameCaseDuo"><section class="wow flipInX">Fish &amp; Chips<br>[UK Classics Mix]</section></span></span>
+            <span class="case9"><iframe width="220" height="130" id="Vid9" src="https://www.youtube.com/embed/b-OKrjbdbTE" frameborder="0" allowfullscreen></iframe><span class="nameCase"><section class="wow flipInX">Website Original Soundtrack</section></span></span> 
+            <button class="TabSuivant" id="TabSuivant1">Suivant ></button>
+        </div>
+        <div id="CadreVid2">
+                <span class="case1"><iframe width="220" height="130" id="Vid10" src="https://www.youtube.com/embed/jjrzhQgM0Wg" frameborder="0" allowfullscreen></iframe><span class="nameCase">Wedding Cocktail</span></span>
+                <span class="case2"><iframe width="220" height="130" id="Vid11" src="https://www.youtube.com/embed/22awgdeAVcg" frameborder="0" allowfullscreen></iframe><span class="nameCase">Electronoclaste</span></span>
+                <span class="case3"><iframe width="220" height="130" id="Vid11" src="https://www.youtube.com/embed/22awgdeAVcg" frameborder="0" allowfullscreen></iframe><span class="nameCase">AHAH</span></span>
+                <span class="case4"><iframe width="220" height="130" id="Vid11" src="https://www.youtube.com/embed/22awgdeAVcg" frameborder="0" allowfullscreen></iframe><span class="nameCase">AHAH</span></span>
+                <span class="case5"><iframe width="220" height="130" id="Vid11" src="https://www.youtube.com/embed/22awgdeAVcg" frameborder="0" allowfullscreen></iframe><span class="nameCase">AHAH</span></span>
+                <span class="case6"><iframe width="220" height="130" id="Vid11" src="https://www.youtube.com/embed/22awgdeAVcg" frameborder="0" allowfullscreen></iframe><span class="nameCase">AHAH</span></span>
+                <span class="case7"><iframe width="220" height="130" id="Vid11" src="https://www.youtube.com/embed/22awgdeAVcg" frameborder="0" allowfullscreen></iframe><span class="nameCase">AHAH</span></span>
+                <span class="case8"><iframe width="220" height="130" id="Vid11" src="https://www.youtube.com/embed/22awgdeAVcg" frameborder="0" allowfullscreen></iframe><span class="nameCase">AHAH</span></span>
+                <span class="case9"><iframe width="220" height="130" id="Vid11" src="https://www.youtube.com/embed/22awgdeAVcg" frameborder="0" allowfullscreen></iframe><span class="nameCase">AHAH</span></span>
+                <button class="TabPrecedent" id="TabPrecedent1">< Precedent</button>
+                <button class="TabSuivant" id="TabSuivant2">Suivant ><br>(Hors Service)</button>
+        </div>
+        <div id="Cadre1">
+            <img src="images/Home_LogoBlanc.png" id="LogoSurprise"/>
+            <div id="Concept"></div>            
+            <div id="TexteFrancais">
+            <section class="wow zoomIn">
+                <p class="Appui" id="first">Au cours d'un évènement réussi, il y a toujours une paire<br>de secondes pendant laquelle le monde s'arrête de<br>tourner, et où l'on observe comme au musée l'oeuvre<br>accomplie d'une soirée d'exception:<br></p>
+                <p class="surligned">C'est cet art que pratique Monsieur Jules</p>
+            </section>
+            <section class="wow zoomIn">                    
+                <p class="Appui">Monsieur Jules, c'est l'association de deux professionels<br>de la musique et de l'évènementiel offrant désormais<br>leurs services après plus de dix ans d'expérience dans le<br>monde entier:<br></p>
+                <p class="surligned">Le disque Jockey de votre évènement.</p>
+            </section>
+            <section class="wow zoomIn">                    
+                <p class="Appui">Basé à Montpellier, et équipé de moyens techniques<br>de dernière génération, Monsieur Jules s'adapte au cadre<br>et au style de votre évènement:<br></p>
+                <p class="surligned">mariage, soirée privée, séminaire.</p>
+            </section>
+            <section class="wow zoomIn">                    
+                <p class="Appui">Faire confiance à Monsieur Jules, c'est transmettre à vos<br>Invités le swing, le groove et la poésie, qu'ils se<br>souviendront longtemps d'avoir trouvé chez vous:<br></p>
+                <p class="surligned">la bande originale de votre évènement.</p>
+            </section>
+            <section class="wow zoomIn">            
+                <p class="Appui">Rejoignez la communauté Monsieur Jules pour<br>échanger et suivre son actualité, il répond à toutes les<br>solicitations:</p>
+            </section>
+            </div>
+        
+            <div id="LogoCliquable">
+            <section class="wow zoomIn">
+                <a id="LienFB" href="https://www.facebook.com/WePlayYouParty/" target="_blank">
+                    <img src="images/Facebook1.png" class="LogoLien" id="LogoYTLien" />
+                </a>
+                <a id="LienYT" href="https://www.youtube.com/channel/UCzwZrgLa7RtD7Gon7fjSrEQ/videos" target="_blank">
+                    <img src="images/LogoYT.png" class="LogoLien" id="LogoFBLien" />
+                </a>
+                <a id="LienSite" href="https://www.monsieur-jules.com/" target="_blank">
+                    <img src="images/LogoBritish.png" id="LogoRUB" />
+                </a>
+            </section>
+            </div>
+        </div>
+    </center>
+    <div id="Contact"></div>    
+        <div id="Slider">
+            <ul class="bxslider">
+                <li><img src="images/1.jpeg" /></li>
+                <li><img src="images/2.jpeg" /></li>
+                <li><img src="images/3.jpeg" /></li>
+                <li><img src="images/4.jpeg" /></li>
+                <li><img src="images/5.jpeg" /></li>
+                <li><img src="images/6.jpeg" /></li>
+                <li><img src="images/7.jpeg" /></li>
+            </ul>
+    <center>
+        <div id="cadreContact">
+            <section class="wow zoomIn">
+                <img src="images/Noeud-Pap.png" id="noeudPapContact" />
+                <p id="mail">contact@monsieur-jules.com</p>
+                <p id="num">+33 6 60 42 90 79</p>
+            </section>
+        </div>
+
+        <div id="Cadre2">
+            <img src="images/Home_LogoBlanc.png" id="LogoSurprise"/>                
+            <div id="TextEnglish">
+            <section class="wow zoomIn">
+                <p class="Appui" id="first">In the course of a successful event, there is an instant<br> when time stands still, and one can admire the full<br> immersion and sheer elation of ones guests - this is the<br> accomplishment of an unforgettable soirée:</p>
+                <p class="surligned">this is the art that Monsieur Jules pratices.</p>
+            </section>
+            <section class="wow zoomIn">                    
+                <p class="Appui">Monsieur Jules, it is the association of two music lovers<br> and entertainment professionals.<br> After working in the entertainment industry across the<br> globe for more than a decade, they now offer their</p>
+                <p class="surligned">disc jockey services for your event.</p>
+            </section>
+            <section class="wow zoomIn">                    
+                <p class="Appui">Based in Montpellier, and working with the latest<br> generation equipment, Monsieur Jules will follow you<br>wherever you are and adapt to your event:</p>
+                <p class="surligned">wedding, private event, seminar.</p>
+            </section>
+            <section class="wow zoomIn">                    
+                <p class="Appui">Trusting Monsieur Jules is trusting that the swing, the<br> groove and the poetry will spread amongst your guests.<br> That they will without a doubt remember</p>
+                <p class="surligned">the orginal soundtrack of your event</p>
+            </section>
+            <section class="wow zoomIn">                    
+                <p class="Appui">Join the Monsieur Jules community to learn more and<br> follow our current activity. One of the associates will be<br> happy to answer any of your questions:</p>
+            </section>
+            </div>
+
+            <div id="LogoCliquable">
+            <section class="wow zoomIn">
+                <a id="LienFB" href="https://www.facebook.com/WePlayYouParty/" target="_blank">
+                    <img src="images/Facebook1.png" class="LogoLien1" id="LogoYTLien" /></a>
+                <a id="LienYT" href="https://www.youtube.com/channel/UCzwZrgLa7RtD7Gon7fjSrEQ/videos" target="_blank" >
+                    <img src="images/LogoYT.png" class="LogoLien1" id="LogoFBLien" /></a>
+                <a id="LienSite" href="https://www.monsieur-jules.com/" target="_blank">
+                    <img src="images/LogoBritish.png" id="LogoRU" /></a>
+            </section>
+            </div>
+        </div>
+    </center>
+    <script src="js/SiteJquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+    </body>
+</html>

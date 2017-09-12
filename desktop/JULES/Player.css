@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "SSStandard";
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ss-standard.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ss-icon,
+.ss-iconMute,
+.ss-icon.ss-standard {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.ss-icon,
+.ss-icon.ss-standard {
+    font-family: "SSStandard";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+figure#audioplayer {
+    border: 1px solid #000;
+    background: #333;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/dark_wall.png);
+    overflow: hidden;
+    width: 500px;
+    height: 120px;
+    padding: .4rem;
+    opacity: 0.8;
+    margin: 0 auto;
+    margin-bottom: 140px;
+    margin-top: 70px;
+}
+
+figure#audioplayer audio {
+    width: 0;
+    height: 0;
+}
+
+figure#audioplayer figcaption {
+    width: 21.4rem;
+    margin: 0 auto;
+    background: #000;
+    border: 1px solid #555;
+}
+
+figure#audioplayer figcaption div {
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    font-family: Avenir, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: .8rem;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+figure#audioplayer figcaption div span {
+    display: block;
+    font-size: 20px;
+    font-family: "Britannic Bold", serif;
+    text-indent: 1rem;
+    
+}
+
+div#time {
+    display: inherit;
+    width: 7.80em;
+    border-left: 1px solid #555;
+}
+
+input#volumeSlider {
+    -webkit-appearance: slider-horizontal;
+    margin-left: 100px;
+    margin-top: 22px;
+    position: absolute;
+
+}
+
+figure#audioplayer button {
+    width: 33px;
+    height: 33px;
+    background: #000;
+    color: #DDD;
+    border: none;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: -245px;
+    z-index: 99999;
+}
+
+figure#audioplayer buttonMute {
+    width: 33px;
+    height: 33px;
+    background: #000;
+    color: #DDD;
+    margin-top: 11px;
+    margin-left: 60px;
+}
+
+#playback {
+    clear: both;
+}
+
+
+
+#playback progress {
+    width: 200px;
+    height: 8px;
+    position: absolute;
+
+    background-color: #888;
+    border: none;
+    color: hsl(44, 100%, 44%);
+    margin-top: 20px;
+    margin-left: -205px;
+}
+
+progress::-webkit-progress-bar,
+progress::-moz-progress-bar,
+progress::progress-bar {
+    background: orangered;
+}
+
+progress::-webkit-progress-value {
+    background: orangered;
+}
+
+progress::-moz-progress-bar {
+    background-color: orangered;
+}
+
+@media screen and (max-width: 500px) {
+    div#time {
+        display: block !important;
+        border-top: 1px solid #555;
+        width: 100%;
+    }
+    figure#audioplayer {
+        width: 100%;
+        padding: .2rem;
+    }
+    figure#audioplayer figcaption div {
+        padding: .4rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    figure#audioplayer figcaption {
+        width: 16rem;
+    }
+    #playback progress {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    figure#audioplayer figcaption {
+        width: 14rem;
+    }
+}
